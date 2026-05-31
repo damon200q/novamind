@@ -12,7 +12,7 @@ const SERVICES = [
 
 const TESTIMONIALS = [
   { name: "Sarah Chen", role: "VP Operations, Meridian Health", quote: "They deployed a patient intake agent in 11 days. Our admin workload dropped by 60% overnight.", avatar: "SC" },
-  { name: "Marcus Webb", role: "CTO, Stackline Commerce", quote: "We evaluated 8 agencies. NovaMind was the only one that delivered production-grade agents, not demos.", avatar: "MW" },
+  { name: "Marcus Webb", role: "CTO, Stackline Commerce", quote: "We evaluated 8 agencies. Bloomstrack was the only one that delivered production-grade agents, not demos.", avatar: "MW" },
   { name: "Lisa Kowalski", role: "Head of CS, FinLeap", quote: "Our CSAT went from 72% to 94%. The agents handle edge cases better than most humans on our team.", avatar: "LK" },
 ];
 
@@ -125,7 +125,7 @@ const Icons = {
 };
 
 /* ════════════════════════ MAIN ════════════════════════ */
-export default function NovaMind() {
+export default function Bloomstrack() {
   const [scrollY, setScrollY] = useState(0);
   const [activeService, setActiveService] = useState(0);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
@@ -358,7 +358,7 @@ export default function NovaMind() {
             <div style={{ width: 8, height: 8, background: "var(--accent)", borderRadius: "50%", position: "relative" }}>
               <div style={{ position: "absolute", inset: -4, border: "1px solid var(--accent)", borderRadius: "50%", animation: "pulseRing 2s ease-out infinite" }} />
             </div>
-            <span style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 18, letterSpacing: "-0.5px", textTransform: "uppercase" }}>NovaMind</span>
+            <span style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 18, letterSpacing: "-0.5px", textTransform: "uppercase" }}>Bloomstrack</span>
           </div>
           <div style={{ display: "flex", gap: 40, alignItems: "center" }}>
             {["Services", "Process", "Pricing", "Contact"].map(s => (
@@ -632,10 +632,10 @@ export default function NovaMind() {
                 <div style={{ marginBottom: 48 }}>
                   <div style={{ fontFamily: "var(--font-mono)", fontSize: 11, letterSpacing: 3, textTransform: "uppercase", color: "var(--text-tertiary)", marginBottom: 20 }}>Or reach out directly</div>
                   <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-                    <a href="mailto:hello@novamind.agency" className="social-pill">{Icons.mail} hello@novamind.agency</a>
+                    <a href="mailto:hello@bloomstrack.com" className="social-pill">{Icons.mail} hello@bloomstrack.com</a>
                     <a href="#" className="social-pill">{Icons.whatsapp} WhatsApp</a>
                     <a href="#" className="social-pill">{Icons.linkedin} LinkedIn</a>
-                    <a href="#" className="social-pill">{Icons.x} @novamind_ai</a>
+                    <a href="#" className="social-pill">{Icons.x} @bloomstrack</a>
                   </div>
                 </div>
 
@@ -675,9 +675,9 @@ export default function NovaMind() {
         <div style={{ maxWidth: 1400, margin: "0 auto", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 24 }}>
           <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
             <div style={{ width: 6, height: 6, background: "var(--accent)", borderRadius: "50%" }} />
-            <span style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 14, textTransform: "uppercase", letterSpacing: 1 }}>NovaMind</span>
+            <span style={{ fontFamily: "var(--font-display)", fontWeight: 800, fontSize: 14, textTransform: "uppercase", letterSpacing: 1 }}>Bloomstrack</span>
           </div>
-          <div style={{ fontFamily: "var(--font-mono)", fontSize: 11, color: "var(--text-tertiary)", letterSpacing: 1 }}>© 2026 NovaMind Agency. All rights reserved.</div>
+          <div style={{ fontFamily: "var(--font-mono)", fontSize: 11, color: "var(--text-tertiary)", letterSpacing: 1 }}>© 2026 Bloomstrack Agency. All rights reserved.</div>
           <div style={{ display: "flex", gap: 32 }}>
             {["X / Twitter", "LinkedIn", "GitHub", "Email"].map(s => (
               <a key={s} href="#" className="nav-link" style={{ fontSize: 11 }}>{s}</a>
